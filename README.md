@@ -5,4 +5,8 @@ It's like unleashing a bull in your Ruby shop to get "functional programming".
 
 ## Usage
 
-TODO: Write usage instructions here
+``` ruby
+p reduce :+, 10, 1..10
+p select :even?, 1..10
+each->n { p n }, 1..10
+```

@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe 'Enumerabull' do
   Enumerable.instance_methods.each do |meth|
-    it 'should add Enumerable#{meth} to Kernel' do
+    it "should add Enumerable#{meth} to Kernel" do
       Kernel.should respond_to meth
     end
   end
